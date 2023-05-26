@@ -1,4 +1,4 @@
-name: Create New Branch
+name: Create Branch
 
 on:
   push:
