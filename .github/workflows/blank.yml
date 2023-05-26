@@ -1,0 +1,16 @@
+name: Create New Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create New Branch
+        run: |
+          git checkout -b new-branch
+          git push -u origin new-branch
